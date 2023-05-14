@@ -1,0 +1,135 @@
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+}
+
+footer section {
+    margin: 20px;
+    border: 3px solid white;
+    width: 90%;
+    display: flex;
+}
+
+footer section #newsletter {
+    color: white;
+    width: 50%;
+    border-right: 3px solid white;
+    padding: 10px 20px 10px 10px;
+}
+
+footer section #newsletter p:nth-child(1) {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer section #newsletter #email-form {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+footer section #newsletter input {
+    font-size: 20px;
+    padding: 8px 0 8px 5px;
+    width: 360px;
+}
+
+footer section #newsletter button {
+    padding: 10px 22px;
+    border: none;
+    background-color: lime;
+    color: white;
+    font-size: 14px;
+    width: 180px;
+    cursor: pointer;
+    transition: border, color, background .5s;
+}
+
+footer section #newsletter button:hover {
+    border: 1px solid lime;
+    color: black;
+    background-color: white;
+}
+
+footer section #newsletter #titulo-portfolio {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer section #newsletter ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer section #newsletter ul a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer section #newsletter ul a img {
+    width: 90px;
+    height: 80px;
+}
+
+footer section #newsletter ul a p {
+    color: white;
+    font-size: 12px;
+}
+
+footer section #info {
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer section #info div {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer section #info .menu, .sobre {
+    display: flex;
+    flex-direction: column;
+}
+
+footer section #info .sobre {
+    justify-content: normal;
+}
+
+footer section #info div p {
+    margin-bottom: 20px;
+}
+
+footer section #info div ul li {
+    list-style: none;
+    line-height: 25px;
+}
+
+footer section #info div ul li a {
+    color: white;
+    transition: border .1s;
+}
+
+footer section #info div ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+footer section #info #footer-img img {
+    padding-bottom: 30px;
+    animation: rotacao 5s infinite;
+}
+
+@keyframes rotacao {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}

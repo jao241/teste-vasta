@@ -1,0 +1,34 @@
+
+#sobre .conteudo {
+    padding: 20px 60px;
+    display: flex;
+}
+
+#sobre .conteudo #imagem-01 {
+    margin-right: 20px;
+}
+
+#sobre .conteudo div p {
+    line-height: 32px;
+}
+
+#sobre .conteudo div button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    background-color: rgba(32, 99, 151, 0.8);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border, color, background .3s;
+}
+
+#sobre .conteudo div button:hover {
+    border: 1px solid rgba(32, 99, 151, 0.8);
+    color: black;
+    background-color: white;
+}
+
+#sobre .conteudo #imagem-02 {
+    margin-left: 20px;
+}

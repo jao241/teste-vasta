@@ -1,0 +1,68 @@
+
+#contatos {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#contatos .form-input input, textarea {
+    font-size: 18px;
+    padding: 8px 0 8px 5px;
+}
+
+#contatos textarea {
+    resize: none;
+}
+
+#contatos form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+#contatos form div:nth-child(1),
+#contatos form div:nth-child(2),
+#contatos form div:nth-child(3) {
+    margin-bottom: 30px;
+}
+
+#contatos form div input {
+    width: 290px;
+}
+
+#contatos form div:nth-child(5) input {
+    width: 420px;
+}
+
+#contatos form div:nth-child(5) div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contatos form div:nth-child(5) div p {
+    font-size: 12px;
+    line-height: 20px;
+    width: 180px;
+}
+
+#contatos form div:nth-child(5) div p a {
+    color: lightskyblue;
+}
+
+#contatos form div:nth-child(5) div button {
+    padding: 16px 22px;
+    border: none;
+    background-color: lime;
+    color: white;
+    font-size: 14px;
+    width: 180px;
+    cursor: pointer;
+    transition: border, color, background .5s;
+}
+
+#contatos form div:nth-child(5) div button:hover {
+    border: 1px solid lime;
+    color: black;
+    background-color: white;
+}

@@ -1,0 +1,37 @@
+#portfolio #imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+}
+
+#portfolio #imagens img {
+    transition: all .8s;
+}
+
+#portfolio #imagens img:hover {
+    transform: scale(1.2);
+}
+
+#portfolio #imagens img:nth-child(4),
+#portfolio #imagens img:nth-child(5),
+#portfolio #imagens img:nth-child(6) {
+    margin-top: 40px;
+}
+
+#portfolio button {
+    margin-top: 40px;
+    padding: 12px 30px;
+    border: none;
+    background-color: rgba(32, 99, 151, 0.8);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border, color, background .5s;
+}
+
+#portfolio button:hover {
+    border: 1px solid rgba(32, 99, 151, 0.8);
+    color: black;
+    background-color: white;
+}
