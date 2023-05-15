@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/cabecalho.css">
-    <link rel="stylesheet" href="assets/css/sobre.css">
-    <link rel="stylesheet" href="assets/css/portfolio.css">
-    <link rel="stylesheet" href="assets/css/depoimentos.css">
-    <link rel="stylesheet" href="assets/css/contatos.css">
-    <link rel="stylesheet" href="assets/css/rodape.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/depoimentos.css">
+    <link rel="stylesheet" href="css/contatos.css">
+    <link rel="stylesheet" href="css/rodape.css">
     <title>Vasta</title>
 </head>
 <body>
     <header id="banner">
        <section id="header-nav">
-            <img src="assets/img/Vasta.png" alt="logo">
+            <img src="img/Vasta.png" alt="logo">
             <nav>
                 <a href="#sobre">Sobre</a>
                 <a href="#portfolio">Portfólio</a>
                 <a href="#depoimentos">Depoimentos</a>
                 <a href="#contatos">Contato</a>
-                <img src="assets/img/search-icon.png" alt="search_icon">
+                <img src="img/search-icon.png" alt="search_icon">
+                <div id="nav-menu">
+                    <div></div>
+                    <div></div>
+                </div>
             </nav>
        </section>
        <section id="header-content">
@@ -39,7 +43,7 @@
         <section id="sobre">
             <p class="titulo">SOBRE</p>
             <div class="conteudo">
-                <img src="assets/img/IMAGEM 1.jpg" alt="image_01" id="imagem-01">
+                <img src="img/IMAGEM 1.jpg" alt="image_01" id="imagem-01">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum aspernatur soluta, obcaecati omnis, provident consequatur illo ea quas qui dignissimos, voluptatem autem blanditiis quisquam odit quae illum facere sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, commodi est dolores consequuntur eveniet architecto cumque et nobis velit maxime soluta beatae autem sint natus at quasi numquam adipisci. Ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nihil, error deleniti culpa ex quis! Saepe ab architecto deleniti corrupti itaque, eligendi ea beatae inventore fugit, animi dolorum quis quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad doloribus soluta natus nisi dolorum voluptates, ab, dignissimos explicabo qui vero accusamus laboriosam ea? Ipsa, assumenda voluptatibus. Dolorem, excepturi dignissimos.</p>
                     <button>SAIBA MAIS</button>
@@ -53,17 +57,17 @@
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum aspernatur soluta, obcaecati omnis, provident consequatur illo ea quas qui dignissimos, voluptatem autem blanditiis quisquam odit quae illum facere sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, commodi est dolores consequuntur eveniet architecto cumque et nobis velit maxime soluta beatae autem sint natus at quasi numquam adipisci. Ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nihil, error deleniti culpa ex quis! Saepe ab architecto deleniti corrupti itaque, eligendi ea beatae inventore fugit, animi dolorum quis quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad doloribus soluta natus nisi dolorum voluptates, ab, dignissimos explicabo qui vero accusamus laboriosam ea? Ipsa, assumenda voluptatibus. Dolorem, excepturi dignissimos.</p>
                 </div>
-                <img src="assets/img/IMAGEM 2.jpg" alt="image_02" id="imagem-02">
+                <img src="img/IMAGEM 2.jpg" alt="image_02" id="imagem-02">
         </section>
         <section id="portfolio">
             <p class="titulo">PORTFÓLIO</p>
             <div id="imagens">
-                <img src="assets/img/portfolio-imagem-1.jpg" alt="portfolio-imagem-1">
-                <img src="assets/img/portfolio-imagem-2.jpg" alt="portfolio-imagem-2">
-                <img src="assets/img/portfolio-imagem-3.jpg" alt="portfolio-imagem-3">
-                <img src="assets/img/portfolio-imagem-4.jpg" alt="portfolio-imagem-4">
-                <img src="assets/img/portfolio-imagem-5.jpg" alt="portfolio-imagem-5">
-                <img src="assets/img/portfolio-imagem-6.jpg" alt="portfolio-imagem-6">
+                <img src="img/portfolio-imagem-1.jpg" alt="portfolio-imagem-1">
+                <img src="img/portfolio-imagem-2.jpg" alt="portfolio-imagem-2">
+                <img src="img/portfolio-imagem-3.jpg" alt="portfolio-imagem-3">
+                <img src="img/portfolio-imagem-4.jpg" alt="portfolio-imagem-4">
+                <img src="img/portfolio-imagem-5.jpg" alt="portfolio-imagem-5">
+                <img src="img/portfolio-imagem-6.jpg" alt="portfolio-imagem-6">
             </div>
             <button>CARREGAR MAIS PROJETOS</button>
         </section>
@@ -136,8 +140,8 @@
     <footer>
         <section>
             <div id="newsletter">
-                <img id="logo" src="assets/img/footer_logo_360x.png" alt="footer-logo">
-                <p>SE INSCREVE PARA RECEBER NOSSO NEWSLETTER</p>
+                <img id="logo" src="img/footer_logo_360x.png" alt="footer-logo">
+                <p id="mensagem-inscricao">SE INSCREVE PARA RECEBER NOSSO NEWSLETTER</p>
                 <div id="email-form">
                     <input type="text" placeholder="Email">
                     <button>INSCREVER SE</button>
@@ -145,19 +149,19 @@
                 <p id="titulo-portfolio">PORTFÓLIO</p>
                 <ul>
                     <a href="">
-                        <img src="assets/img/portfolio-imagem-2.jpg" alt="portfolio-imagem-2">
+                        <img src="img/portfolio-imagem-2.jpg" alt="portfolio-imagem-2">
                         <p>LINK 1</p>
                     </a>
                     <a href="">
-                        <img src="assets/img/portfolio-imagem-3.jpg" alt="portfolio-imagem-3">
+                        <img src="img/portfolio-imagem-3.jpg" alt="portfolio-imagem-3">
                         <p>LINK 2</p>
                     </a>
                     <a href="">
-                        <img src="assets/img/portfolio-imagem-5.jpg" alt="portfolio-imagem-5">
+                        <img src="img/portfolio-imagem-5.jpg" alt="portfolio-imagem-5">
                         <p>LINK 3</p>
                     </a>
                     <a href="">
-                        <img src="assets/img/portfolio-imagem-4.jpg" alt="portfolio-imagem-4">
+                        <img src="img/portfolio-imagem-4.jpg" alt="portfolio-imagem-4">
                         <p>LINK 4</p>
                     </a>
                 </ul>
@@ -182,7 +186,7 @@
                     </div>
                 </div>
                 <div id="footer-img">
-                 <img src="assets/img/footer_logo_360x.png" alt="footer-logo">
+                 <img src="img/footer_logo_360x.png" alt="footer-logo">
                 </div>
             </div>
             <div class="info-mobile">
