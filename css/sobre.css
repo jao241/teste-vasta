@@ -47,6 +47,10 @@
         width: 100%;
     }
 
+    #sobre .conteudo #imagem-01 {
+        margin-right: 0;
+    }
+
     #sobre .conteudo div {
         padding: 0 10px;
     }

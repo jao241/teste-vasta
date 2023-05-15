@@ -18,7 +18,7 @@ footer section {
     padding: 10px 20px 10px 10px;
 }
 
-#newsletter p:nth-child(1) {
+#mensagem-inscricao {
     padding-top: 10px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -124,6 +124,11 @@ footer section {
     animation: rotacao 10s infinite;
 }
 
+
+#logo, .info-mobile {
+    display: none;
+}
+
 @keyframes rotacao {
     from {
         transform: rotateY(0deg);
@@ -141,6 +146,10 @@ footer section {
 
     #info {
         display: none;
+    }
+
+    #logo {
+        display: flex;
     }
 
     #newsletter {
@@ -172,6 +181,7 @@ footer section {
         font-size: 20px;
         padding: 6px 0 6px 5px;
         width: 50%;
+        border: none;
     }
 
     #newsletter button {

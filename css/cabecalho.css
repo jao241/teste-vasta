@@ -118,4 +118,15 @@ header nav a {
         margin: 10px 0;
         /* margin-bottom: 80px; */
     }
+
+    #nav-menu {
+        margin-left: 10px;
+    }
+
+    #nav-menu div{
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        margin: 6px 0;
+    }
 }
