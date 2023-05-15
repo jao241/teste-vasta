@@ -11,31 +11,31 @@ footer section {
     display: flex;
 }
 
-footer section #newsletter {
+#newsletter {
     color: white;
     width: 50%;
     border-right: 3px solid white;
     padding: 10px 20px 10px 10px;
 }
 
-footer section #newsletter p:nth-child(1) {
+#newsletter p:nth-child(1) {
     padding-top: 10px;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-footer section #newsletter #email-form {
+#newsletter #email-form {
     display: flex;
     margin-bottom: 40px;
 }
 
-footer section #newsletter input {
+#newsletter input {
     font-size: 20px;
     padding: 8px 0 8px 5px;
     width: 360px;
 }
 
-footer section #newsletter button {
+#newsletter button {
     padding: 10px 22px;
     border: none;
     background-color: lime;
@@ -46,40 +46,40 @@ footer section #newsletter button {
     transition: border, color, background .5s;
 }
 
-footer section #newsletter button:hover {
+#newsletter button:hover {
     border: 1px solid lime;
     color: black;
     background-color: white;
 }
 
-footer section #newsletter #titulo-portfolio {
+#newsletter #titulo-portfolio {
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-footer section #newsletter ul {
+#newsletter ul {
     display: flex;
     justify-content: space-around;
 }
 
-footer section #newsletter ul a {
+#newsletter ul a {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-footer section #newsletter ul a img {
+#newsletter ul a img {
     width: 90px;
     height: 80px;
 }
 
-footer section #newsletter ul a p {
+#newsletter ul a p {
     color: white;
     font-size: 12px;
 }
 
-footer section #info {
+#info {
     width: 50%;
     color: white;
     display: flex;
@@ -87,41 +87,41 @@ footer section #info {
     justify-content: space-around;
 }
 
-footer section #info div {
+#info div {
     display: flex;
     justify-content: space-around;
 }
 
-footer section #info .menu, .sobre {
+#info .menu, .sobre {
     display: flex;
     flex-direction: column;
 }
 
-footer section #info .sobre {
+#info .sobre {
     justify-content: normal;
 }
 
-footer section #info div p {
+#info div p {
     margin-bottom: 20px;
 }
 
-footer section #info div ul li {
+#info div ul li {
     list-style: none;
     line-height: 25px;
 }
 
-footer section #info div ul li a {
+#info div ul li a {
     color: white;
     transition: border .1s;
 }
 
-footer section #info div ul li a:hover {
+#info div ul li a:hover {
     border-bottom: 2px solid white;
 }
 
-footer section #info #footer-img img {
+#info #footer-img img {
     padding-bottom: 30px;
-    animation: rotacao 5s infinite;
+    animation: rotacao 10s infinite;
 }
 
 @keyframes rotacao {
@@ -131,5 +131,86 @@ footer section #info #footer-img img {
 
     to {
         transform: rotateY(360deg);
+    }
+}
+
+@media (max-width: 500px) {
+    footer section {
+        flex-direction: column;
+    }
+
+    #info {
+        display: none;
+    }
+
+    #newsletter {
+        border: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    #newsletter p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        line-height: 30px;
+        text-align: center;
+        width: 80%;
+    }
+
+    #newsletter #email-form {
+        display: flex;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+    #newsletter input {
+        font-size: 20px;
+        padding: 6px 0 6px 5px;
+        width: 50%;
+    }
+
+    #newsletter button {
+        padding: 5px 22px;
+        font-size: 12px;
+        width: 40%;
+    }
+
+    #newsletter ul {
+        width: 250px;
+        flex-wrap: wrap;
+    }
+
+    #newsletter ul a img {
+        width: 100px;
+    }
+
+    #newsletter ul a:nth-child(3),
+    #newsletter ul a:nth-child(4) {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #newsletter ul a p {
+        margin: 0;
+        line-height: normal;
+    }
+
+    .info-mobile {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 2px solid white;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .info-mobile p:last-child {
+        font-size: 18px;
     }
 }

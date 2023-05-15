@@ -23,6 +23,10 @@
     transition: border, color, background .3s;
 }
 
+#sobre .conteudo div #leia-mais{
+    display: none;
+}
+
 #sobre .conteudo div button:hover {
     border: 1px solid rgba(32, 99, 151, 0.8);
     color: black;
@@ -31,4 +35,39 @@
 
 #sobre .conteudo #imagem-02 {
     margin-left: 20px;
+}
+
+@media (max-width: 500px) {
+    #sobre .conteudo {
+        padding: 0;
+        display: block;
+    }
+
+    #sobre .conteudo img {
+        width: 100%;
+    }
+
+    #sobre .conteudo div {
+        padding: 0 10px;
+    }
+
+    #sobre .conteudo:last-child {
+        display: none;
+    }
+
+    #sobre .conteudo div button{
+        display: none;
+    }
+
+    #sobre .conteudo div #leia-mais{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    #sobre .conteudo div #leia-mais p:last-child {
+        margin-bottom: 15px;
+        font-size: 36px;
+    }
 }

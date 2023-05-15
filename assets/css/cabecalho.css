@@ -7,7 +7,6 @@ header nav a:hover {
     border-radius: 5px;
 }
 
-
 #banner {
     background-image: url('../img/Banner.jpg');
     background-size: cover;
@@ -49,12 +48,12 @@ header nav a {
     margin: 80px 80px;
 }
 
-#header-content p:nth-child(1) {
+#header-content div p:nth-child(1) {
     font-size: 38px;
     letter-spacing: 2px;
 }
 
-#header-content p:nth-child(2) {
+#header-content div p:nth-child(2) {
     font-size: 21px;
     letter-spacing: 2px;
     color: gray;
@@ -75,4 +74,48 @@ header nav a {
     border: 1px solid lime;
     color: black;
     background-color: white;
+}
+
+@media (max-width: 500px) {
+    #header-nav {
+        margin: 0;
+        padding: 10px 20px 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #banner {
+        background-image: url('../img/BANNER\ -\ IMAGE\ -\ MOBILE.png');
+        background-size: cover;
+        background-position-y: 0;
+        height: 400px;
+    }
+
+    header nav a {
+        display: none;
+    }
+
+    #header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 40px;
+        height: 270px;
+        justify-content: space-between;
+    }
+
+    #header-content div p:nth-child(1) {
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+    
+    #header-content div p:nth-child(2) {
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: gray;
+        margin: 10px 0;
+        /* margin-bottom: 80px; */
+    }
 }

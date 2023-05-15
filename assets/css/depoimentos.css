@@ -50,3 +50,22 @@
 .depoimento-conteudo div span {
     font-size: 12px;
 }
+
+@media (max-width: 500px) {
+    #depoimentos {
+        margin-top: 40px;
+    }
+
+    #depoimentos p:first-child {
+        margin-top: 10px;
+    }
+
+    .item-depoimento:nth-child(2),
+    .item-depoimento:nth-child(3) {
+        display: none;
+    }
+
+    #lista-depoimentos .carrosel {
+        padding:10px;
+    }
+}

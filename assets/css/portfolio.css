@@ -35,3 +35,31 @@
     color: black;
     background-color: white;
 }
+
+@media (max-width: 500px) {
+    #portfolio p:first-child {
+        margin-top: 10px;
+    }
+
+    #portfolio #imagens {
+        width: 90%;
+    }
+
+    #portfolio #imagens img {
+        width: 160px;
+    }
+
+    #portfolio #imagens img:nth-child(3),
+    #portfolio #imagens img:nth-child(4) {
+        margin-top: 20px;
+    }
+
+    #portfolio #imagens img:nth-child(5),
+    #portfolio #imagens img:nth-child(6) {
+        display: none;
+    }
+
+    #portfolio button {
+        padding: 20px 30px;
+    }
+}
