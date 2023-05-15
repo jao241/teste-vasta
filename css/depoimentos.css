@@ -51,7 +51,7 @@
     font-size: 12px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     #depoimentos {
         margin-top: 40px;
     }
@@ -67,5 +67,17 @@
 
     #lista-depoimentos .carrosel {
         padding:10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .item-depoimento:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .item-depoimento:nth-child(2) {
+        display: none;
     }
 }

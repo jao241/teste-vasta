@@ -13,6 +13,8 @@ header nav a:hover {
     background-repeat: no-repeat;
     background-position-y: -60px;
     height: 500px;
+    width: 100%;
+    transition: all 1s;
 }
 
 #header-nav {
@@ -76,7 +78,7 @@ header nav a {
     background-color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     #header-nav {
         margin: 0;
         padding: 10px 20px 0 20px;
@@ -90,6 +92,7 @@ header nav a {
         background-size: cover;
         background-position-y: 0;
         height: 400px;
+        transition: all 1s;
     }
 
     header nav a {
@@ -122,7 +125,6 @@ header nav a {
         letter-spacing: 2px;
         color: gray;
         margin: 10px 0;
-        /* margin-bottom: 80px; */
     }
 
     #nav-menu {
@@ -136,3 +138,13 @@ header nav a {
         margin: 6px 0;
     }
 }
+/* 
+@media (max-width: 700px) {
+    #header-nav {
+    margin: 0 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+} */

@@ -36,7 +36,19 @@
     background-color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
+    #portfolio #imagens img:nth-child(3) {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 750px) {
+    #portfolio #imagens img:nth-child(2) {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 600px) {
     #portfolio p:first-child {
         margin-top: 10px;
     }
@@ -46,7 +58,11 @@
     }
 
     #portfolio #imagens img {
-        width: 160px;
+        width: 45%;
+    }
+
+    #portfolio #imagens img:nth-child(2) {
+        margin-top: 0;
     }
 
     #portfolio #imagens img:nth-child(3),
