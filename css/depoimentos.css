@@ -17,6 +17,7 @@
 #lista-depoimentos .carrosel {
     font-size: 40px;
     cursor: pointer;
+    color: rgba(85, 85, 85, 255);
 }
 
 .item-depoimento {
@@ -25,7 +26,7 @@
 }
 
 .item-depoimento #stars {
-    color: orange;
+    color: rgba(242, 211, 68, 255);
 }
 
 .item-depoimento:last-child {
@@ -39,12 +40,19 @@
 .depoimento-conteudo img {
     width: 180px;
     height: 80px;
-    background-color: gray;
+    background-color: rgba(204, 204, 204, 255);
     margin-right: 10px;
+}
+
+.depoimento-conteudo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .depoimento-conteudo div p {
     font-size: 14px;
+    color: black;
 }
 
 .depoimento-conteudo div span {

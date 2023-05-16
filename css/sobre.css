@@ -14,13 +14,14 @@
 
 #sobre .conteudo div p {
     line-height: 32px;
+    color: rgba(23, 33, 41, 255);
 }
 
 #sobre .conteudo div button {
     margin-top: 20px;
-    padding: 12px 30px;
+    padding: 14px;
     border: none;
-    background-color: rgba(32, 99, 151, 0.8);
+    background-color: rgba(88, 114, 146, 255);
     color: white;
     font-size: 16px;
     cursor: pointer;

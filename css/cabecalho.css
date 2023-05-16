@@ -1,5 +1,8 @@
 header nav a {
     transition: border .2s;
+    color: rgba(23, 33, 41, 255);
+    font-weight: bold;
+    margin-right: 30px;
 }
 
 header nav a:hover {
@@ -40,12 +43,6 @@ header nav a:hover {
     border-radius: 50%;
 }
 
-header nav a {
-    color: black;
-    font-weight: bold;
-    margin-right: 30px;
-}
-
 #header-content {
     margin: 80px 80px;
 }
@@ -53,19 +50,20 @@ header nav a {
 #header-content div p:nth-child(1) {
     font-size: 38px;
     letter-spacing: 2px;
+    color: rgba(59, 59, 59, 255);
 }
 
 #header-content div p:nth-child(2) {
     font-size: 21px;
     letter-spacing: 2px;
-    color: gray;
+    color: rgba(103, 103, 103, 255);
     margin: 10px 0;
 }
 
 #header-content button {
     padding: 16px 22px;
     border: none;
-    background-color: lime;
+    background-color: rgba(38, 181, 34, 255);
     color: white;
     font-size: 14px;
     cursor: pointer;
@@ -73,7 +71,7 @@ header nav a {
 }
 
 #header-content button:hover {
-    border: 1px solid lime;
+    border: 1px solid rgba(37, 181, 33, 255);
     color: black;
     background-color: white;
 }

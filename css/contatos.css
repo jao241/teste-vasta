@@ -65,16 +65,21 @@
     font-size: 10px;
     line-height: 20px;
     width: 180px;
+    color: rgba(23, 33, 41, 255);
 }
 
 #contatos form div:nth-child(5) div p a {
-    color: lightskyblue;
+    color: rgba(88, 127, 162, 255);
+}
+
+#contatos form div:nth-child(5) div p a:hover {
+    border-bottom: 1px solid rgba(88, 127, 162, 255);
 }
 
 #contatos form div:nth-child(5) div button {
     padding: 16px 22px;
     border: none;
-    background-color: lime;
+    background-color: rgba(37, 181, 33, 255);
     color: white;
     font-size: 14px;
     width: 180px;
@@ -83,7 +88,7 @@
 }
 
 #contatos form div:nth-child(5) div button:hover {
-    border: 1px solid lime;
+    border: 1px solid rgba(37, 181, 33, 255);
     color: black;
     background-color: white;
 }
