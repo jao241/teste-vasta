@@ -1,4 +1,4 @@
-Desafio: 
+## Desafio: 
 
 Seguem informações para o 1˚ desafio
 
@@ -15,7 +15,9 @@ Obs.: Nossos clientes verificam o site com base no psd que enviamos para eles e 
 O prazo para entrega desse projeto é até quinta(18/05) às 16h, quero ver até onde você consegue chegar e em quanto tempo foi feito, beleza?
 
 
-Tempo gasto no desenvolvimento: 
-Dia 12: 3 horas
-Dia 13: 3 horas
-Dia 14: 3 horas
+## Tempo gasto no desenvolvimento: 
+- Dia 12: 3 horas
+- Dia 13: 3 horas
+- Dia 14: 3 horas
+- Dia 15: 3 horas
+### Total: 12 horas
