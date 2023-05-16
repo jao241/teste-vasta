@@ -168,6 +168,7 @@ footer section {
         display: flex;
         margin-bottom: 0;
         justify-content: center;
+        width: 100%;
     }
 
     #newsletter input {
@@ -214,6 +215,7 @@ footer section {
     }
 
     .info-mobile p:last-child {
-        font-size: 18px;
+        font-size: 12px;
+        margin-left: 10px;
     }
 }
