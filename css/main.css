@@ -26,6 +26,10 @@ a {
     color: rgba(23, 33, 41, 255);
 }
 
+.close {
+    display: none !important;
+}
+
 @media (max-width: 600px) {
     .titulo {
         margin: 30px auto;

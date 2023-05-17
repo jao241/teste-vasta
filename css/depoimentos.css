@@ -3,7 +3,7 @@
     margin-top: 60px;
 }
 
-#depoimentos #lista-depoimentos {
+#lista-depoimentos {
     display: flex;
     align-items: center;
     width: 80%;
@@ -14,7 +14,7 @@
     display: flex;
 }
 
-#lista-depoimentos .carrosel {
+.carrosel {
     font-size: 40px;
     cursor: pointer;
     color: rgba(85, 85, 85, 255);
@@ -25,7 +25,7 @@
     margin-right: 15px;
 }
 
-.item-depoimento #stars {
+#stars {
     color: rgba(242, 211, 68, 255);
 }
 
@@ -73,7 +73,7 @@
         display: none;
     }
 
-    #lista-depoimentos .carrosel {
+    .carrosel {
         padding:10px;
     }
 }

@@ -1,82 +1,92 @@
 
-#sobre .conteudo {
+.conteudo {
     padding: 20px 60px;
     display: flex;
 }
 
-#sobre .conteudo #imagem-01 {
+.conteudo #imagem-01 {
     margin-right: 20px;
 }
 
-#sobre .conteudo img {
+.conteudo img {
     height: fit-content;
 }
 
-#sobre .conteudo div p {
+.conteudo div p {
     line-height: 32px;
     color: rgba(23, 33, 41, 255);
 }
 
-#sobre .conteudo div button {
+.conteudo div button {
     margin-top: 20px;
     padding: 14px;
     border: none;
-    background-color: rgba(88, 114, 146, 255);
+    background-color: rgba(88, 115, 145, 255);
     color: white;
     font-size: 16px;
     cursor: pointer;
     transition: border, color, background .3s;
 }
 
-#sobre .conteudo div #leia-mais{
+#leia-mais {
     display: none;
 }
 
-#sobre .conteudo div button:hover {
+.conteudo div button:hover {
     border: 1px solid rgba(32, 99, 151, 0.8);
     color: black;
     background-color: white;
 }
 
-#sobre .conteudo #imagem-02 {
+.conteudo #imagem-02 {
     margin-left: 20px;
 }
 
+
 @media (max-width: 650px) {
-    #sobre .conteudo {
+    .conteudo {
         padding: 0;
         display: block;
     }
 
-    #sobre .conteudo img {
+    .conteudo img {
         width: 100%;
     }
 
-    #sobre .conteudo #imagem-01 {
+    .conteudo #imagem-01 {
         margin-right: 0;
     }
 
-    #sobre .conteudo div {
+    .conteudo #imagem-02 {
+        margin-left: 0;
+    }
+
+    .conteudo div {
         padding: 0 10px;
     }
 
-    #sobre .conteudo:last-child {
+    .conteudo:nth-child(3) {
         display: none;
     }
 
-    #sobre .conteudo div button{
+    .conteudo div button{
         display: none;
     }
 
-    #sobre .conteudo div #leia-mais{
+    #leia-mais{
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 10px auto;
     }
 
-    #sobre .conteudo div #leia-mais p:last-child {
-        margin-bottom: 15px;
+    #leia-mais p:last-child {
+        padding-bottom: 10px;
         font-size: 36px;
+    }
+
+    .show-content {
+        display: flex !important;
+        flex-direction: column;
     }
 }

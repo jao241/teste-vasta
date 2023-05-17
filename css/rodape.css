@@ -40,7 +40,7 @@ footer section {
 #newsletter button {
     padding: 10px;
     border: none;
-    background-color: rgba(37, 181, 33, 255);
+    background-color: rgba(39, 181, 35, 255);
     color: white;
     font-size: 12px;
     width: 40%;
@@ -50,12 +50,12 @@ footer section {
 }
 
 #newsletter button:hover {
-    border: 1px solid rgba(37, 181, 33, 255);
+    border: 1px solid rgba(39, 181, 35, 255);
     color: black;
     background-color: white;
 }
 
-#newsletter #titulo-portfolio {
+#titulo-portfolio {
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -97,12 +97,12 @@ footer section {
     justify-content: space-around;
 }
 
-#info .menu, .sobre {
+.menu, .sobre {
     display: flex;
     flex-direction: column;
 }
 
-#info .sobre {
+.sobre {
     justify-content: normal;
 }
 
@@ -124,7 +124,7 @@ footer section {
     border-bottom: 2px solid white;
 }
 
-#info #footer-img img {
+#footer-img img {
     padding-bottom: 30px;
 }
 
@@ -164,7 +164,7 @@ footer section {
         width: 80%;
     }
 
-    #newsletter #email-form {
+    #email-form {
         display: flex;
         margin-bottom: 0;
         justify-content: center;
@@ -207,11 +207,30 @@ footer section {
     .info-mobile {
         color: white;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         border-top: 2px solid white;
         padding: 5px;
         font-weight: bold;
+    }
+
+    .info-mobile div {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    .info-mobile div ul {
+        list-style: none;
+    }
+
+    .info-mobile div ul li {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .info-mobile div ul li a {
+        color: white;
     }
 
     .info-mobile p:last-child {

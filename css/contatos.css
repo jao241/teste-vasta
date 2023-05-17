@@ -4,12 +4,12 @@
     margin-bottom: 40px;
 }
 
-#contatos #contatos-form {
+#contatos-form {
     display: flex;
     justify-content: center;
 }
 
-#contatos .form-input input, textarea {
+.form-input input, textarea {
     font-size: 18px;
     padding: 8px 0 8px 5px;
 }

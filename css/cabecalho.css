@@ -33,6 +33,12 @@ header nav a:hover {
     align-items: center;
 }
 
+#header-nav nav input {
+    padding: 3px;
+    margin-right: 10px;
+    width: 90%;
+}
+
 #header-nav nav img {
     cursor: pointer;
     padding: 3px;
@@ -63,7 +69,7 @@ header nav a:hover {
 #header-content button {
     padding: 16px 22px;
     border: none;
-    background-color: rgba(38, 181, 34, 255);
+    background-color: rgba(39, 181, 35, 255);
     color: white;
     font-size: 14px;
     cursor: pointer;
@@ -71,9 +77,13 @@ header nav a:hover {
 }
 
 #header-content button:hover {
-    border: 1px solid rgba(37, 181, 33, 255);
+    border: 1px solid rgba(39, 181, 35, 255);
     color: black;
     background-color: white;
+}
+
+#nav-mobile {
+    display: none;
 }
 
 @media (max-width: 600px) {
@@ -85,6 +95,10 @@ header nav a:hover {
         align-items: center;
     }
 
+    #header-nav nav img {
+        margin-right: 6px;
+    }
+    
     #banner {
         background-image: url('../img/BANNER\ -\ IMAGE\ -\ MOBILE.png');
         background-size: cover;
@@ -125,24 +139,59 @@ header nav a:hover {
         margin: 10px 0;
     }
 
-    #nav-menu {
+    .nav-menu {
         margin-left: 10px;
+        transition: all .1s ease;
     }
 
-    #nav-menu div{
+    .nav-menu div, .nav-menu-close div{
         width: 20px;
         height: 2px;
         background-color: black;
         margin: 6px 0;
+        transition: all .2s ease;
+    }
+
+    .nav-menu-close {
+        margin-right: 10px;
+        transition: all .1s ease;
+    }
+
+    .nav-menu-close div {
+        position: absolute;
+        margin: 0;
+        transition: all .2s ease-in-out;
+    }
+
+    .nav-menu-close div:nth-child(1) {
+        transform: rotateZ(45deg);
+    }
+
+    .nav-menu-close div:nth-child(2) {
+        transform: rotateZ(-45deg);
+    }
+
+    #nav-mobile {
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .95);
+    }
+
+    #nav-mobile a{
+        display: block;
+        color: white;
+        padding-bottom: 30px;
+        margin-right: 0;
+        border: none;
+    }
+
+    #nav-mobile a:nth-child(1){
+        padding-top: 40px;
     }
 }
-/* 
-@media (max-width: 700px) {
-    #header-nav {
-    margin: 0 10px;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-} */
