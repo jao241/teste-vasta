@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/depoimentos.css">
     <link rel="stylesheet" href="css/contatos.css">
     <link rel="stylesheet" href="css/rodape.css">
+    <script src="js/index.js" defer></script>
     <title>Vasta</title>
 </head>
 <body>
@@ -22,11 +23,18 @@
                 <a href="#portfolio">Portfólio</a>
                 <a href="#depoimentos">Depoimentos</a>
                 <a href="#contatos">Contato</a>
-                <img src="img/search-icon.png" alt="search_icon">
-                <div id="nav-menu">
+                <input type="text" name="pesquisa" id="input-search" class="close" placeholder="pesquise algo">
+                <img src="img/search-icon.png" alt="search_icon" onclick="showTopSearchBar()">
+                <div id="menu" class="nav-menu" onclick="showTopMenu()">
                     <div></div>
                     <div></div>
                 </div>
+            </nav>
+            <nav id="nav-mobile" class="close">
+                <a href="#sobre">Sobre</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#contatos">Contato</a>
             </nav>
        </section>
        <section id="header-content">
@@ -47,17 +55,18 @@
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum aspernatur soluta, obcaecati omnis, provident consequatur illo ea quas qui dignissimos, voluptatem autem blanditiis quisquam odit quae illum facere sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, commodi est dolores consequuntur eveniet architecto cumque et nobis velit maxime soluta beatae autem sint natus at quasi numquam adipisci. Ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nihil, error deleniti culpa ex quis! Saepe ab architecto deleniti corrupti itaque, eligendi ea beatae inventore fugit, animi dolorum quis quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad doloribus soluta natus nisi dolorum voluptates, ab, dignissimos explicabo qui vero accusamus laboriosam ea? Ipsa, assumenda voluptatibus. Dolorem, excepturi dignissimos.</p>
                     <button>SAIBA MAIS</button>
-                    <div id="leia-mais">
-                        <p>Leia Mais</p>
-                        <p>&#8964;</p>
-                    </div>
                 </div>
             </div>
-            <div class="conteudo">
+            <div class="conteudo" class="show-content">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum aspernatur soluta, obcaecati omnis, provident consequatur illo ea quas qui dignissimos, voluptatem autem blanditiis quisquam odit quae illum facere sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, commodi est dolores consequuntur eveniet architecto cumque et nobis velit maxime soluta beatae autem sint natus at quasi numquam adipisci. Ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nihil, error deleniti culpa ex quis! Saepe ab architecto deleniti corrupti itaque, eligendi ea beatae inventore fugit, animi dolorum quis quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad doloribus soluta natus nisi dolorum voluptates, ab, dignissimos explicabo qui vero accusamus laboriosam ea? Ipsa, assumenda voluptatibus. Dolorem, excepturi dignissimos.</p>
                 </div>
                 <img src="img/IMAGEM 2.jpg" alt="image_02" id="imagem-02">
+            </div>
+            <div id="leia-mais" onclick="exibeConteudo()">
+                <p>Leia Mais</p>
+                <p>&#8964;</p>
+            </div>
         </section>
         <section id="portfolio">
             <p class="titulo">PORTFÓLIO</p>
@@ -69,7 +78,7 @@
                 <img src="img/portfolio-imagem-5.jpg" alt="portfolio-imagem-5">
                 <img src="img/portfolio-imagem-6.jpg" alt="portfolio-imagem-6">
             </div>
-            <button>CARREGAR MAIS PROJETOS</button>
+            <button onclick="exibirProjetos()">CARREGAR MAIS PROJETOS</button>
         </section>
         <section id="depoimentos">
             <p class="titulo">DEPOIMENTOS</p>
@@ -180,8 +189,8 @@
                     <div class="sobre">
                         <p>SOBRE</p>
                         <ul>
-                            <li><a href="">Política de Privacidade</a></li>
-                            <li><a href="">Termos de Uso</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Termos de Uso</a></li>
                         </ul>
                     </div>
                 </div>
@@ -189,13 +198,31 @@
                  <img src="img/footer_logo_360x.png" alt="footer-logo">
                 </div>
             </div>
-            <div class="info-mobile">
-                <p>MENU</p>
-                <p>V</p>
+            <div class="info-mobile" onclick="showBottomMenu()">
+               <div>
+                    <p>MENU</p>
+                    <p>V</p>
+               </div>
+               <div class="close" id="menu-bottom-mobile">
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+               </div>
             </div>
-            <div class="info-mobile">
-                <p>SOBRE</p>
-                <p>V</p>
+            <div class="info-mobile" onclick="showSobreMenuMobile()">
+                <div>
+                    <p>SOBRE</p>
+                    <p>V</p>
+                </div>
+                <div class="close" id="sobre-bottom-mobile">
+                    <ul>
+                        <li><a href="">Política de Privacidade</a></li>
+                        <li><a href="">Termos de Uso</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
     </footer>
