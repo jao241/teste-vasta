@@ -78,6 +78,7 @@
         justify-content: center;
         align-items: center;
         margin: 10px auto;
+        cursor: pointer;
     }
 
     #leia-mais p:last-child {
