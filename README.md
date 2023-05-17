@@ -20,4 +20,7 @@ O prazo para entrega desse projeto é até quinta(18/05) às 16h, quero ver até
 - Dia 13: 3 horas
 - Dia 14: 3 horas
 - Dia 15: 3 horas
-### Total: 12 horas
+- Dia 16: 1 hora
+- Dia 17: 3 hora
+
+### Total: 16 horas
